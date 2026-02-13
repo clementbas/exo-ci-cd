@@ -1,6 +1,6 @@
 # Exercice CI/CD - Master 1 2025/2026
 
-Une API Express TypeScript avec une pipeline CI/CD complète, linting, formatting, tests unitaires, pre-commit hooks, et Docker.
+Une API Express TypeScript avec une pipeline CI/CD complète, linting, formatting, tests unitaires, pre-commit hooks, et Docker. rajout test
 
 ## 📋 Table des matières
 
