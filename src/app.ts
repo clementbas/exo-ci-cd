@@ -55,6 +55,14 @@ app.get('/products', (req: Request, res: Response) => {
   });
 });
 
+app.get('/api/version', (req: Request, res: Response) => {
+  res.json({
+    version: API_VERSION,
+    node: process.version,
+    environment: process.env.NODE_ENV,
+  });
+});
+
 // Route 404
 app.use((req: Request, res: Response) => {
   res.status(404).json({

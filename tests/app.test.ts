@@ -42,6 +42,16 @@ describe('API Tests', () => {
     });
   });
 
+  describe('GET /api/version', () => {
+    it('should return API version information', async () => {
+      const response = await request(app).get('/api/version');
+      expect(response.status).toBe(200);
+      expect(response.body).toHaveProperty('version');
+      expect(response.body).toHaveProperty('node');
+      expect(response.body).toHaveProperty('environment');
+    });
+  });
+
   describe('404 Route', () => {
     it('should return 404 for unknown routes', async () => {
       const response = await request(app).get('/unknown-route');
