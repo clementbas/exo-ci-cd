@@ -12,7 +12,9 @@ dist/
 coverage/
 
 # Lock files (use one package manager per project)
-package-lock.json
+# Note: package-lock.json IS tracked for consistency
+yarn.lock
+pnpm-lock.yaml
 yarn.lock
 pnpm-lock.yaml
 
